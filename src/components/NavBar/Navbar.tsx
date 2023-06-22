@@ -1,13 +1,15 @@
-export const Navbar = () => {
+import logo from "../../assets/img/Horizontal Logo.png"
+
+export const Navbar = (): JSX.Element => {
   return (
-    <nav className="navbar navbar-expand-lg bg-light">
+    <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
           <img
-            src="/docs/5.2/assets/brand/bootstrap-logo.svg"
-            alt="Bootstrap"
-            width="30"
-            height="24"
+            src={logo}
+            alt="LogoPropulsarte"
+            width="100%"
+            height="50"
           />
         </a>
         <button
@@ -22,38 +24,62 @@ export const Navbar = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul className="navbar-nav me-auto mb-2 mb-lg-0 mx-auto">
-            <li className="nav-item ms-5">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Nostros
+                Nosotros
               </a>
             </li>
 
-            <li className="nav-item ms-3">
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Proyectos Especiales
               </a>
             </li>
 
-            <li className="nav-item ms-3">
-              <a className="nav-link active" aria-current="page" href="#">
+            <li className="nav-item dropdown">
+              <a
+                className="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
                 Servicios
               </a>
+              <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a className="dropdown-item" href="#">
+                    EJM
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    EJM
+                  </a>
+                </li>
+                <li>
+                  <a className="dropdown-item" href="#">
+                    EJM
+                  </a>
+                </li>
+              </ul>
             </li>
 
-            <li className="nav-item ms-3">
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
-                Reconocimiento y Aliados
+                Reconocimientos y Aliados
               </a>
             </li>
 
-            <li className="nav-item ms-3">
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Donaciones
               </a>
             </li>
 
-            <li className="nav-item ms-3">
+            <li className="nav-item">
               <a className="nav-link active" aria-current="page" href="#">
                 Contacto
               </a>
