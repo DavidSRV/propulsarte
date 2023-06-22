@@ -1,9 +1,12 @@
-import React from 'react'
+import React from "react";
+import "./_home.scss";
 
 const Home = () => {
   return (
-    <div>Home</div>
-  )
-}
+    <section className="container-fluid background">
+      
+    </section>
+  );
+};
 
-export default Home
+export default Home;

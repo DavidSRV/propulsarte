@@ -1,16 +1,14 @@
-import logo from "../../assets/img/Horizontal Logo.png"
+import logo from "../../assets/img/Horizontal Logo.png";
+
+          //TERMNAR Y ORGANIZAR LINKS ENRUTADORES
+
 
 export const Navbar = (): JSX.Element => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container-fluid">
         <a className="navbar-brand" href="#">
-          <img
-            src={logo}
-            alt="LogoPropulsarte"
-            width="100%"
-            height="50"
-          />
+          <img src={logo} alt="LogoPropulsarte" width="100%" height="50" />
         </a>
         <button
           className="navbar-toggler"
@@ -51,17 +49,41 @@ export const Navbar = (): JSX.Element => {
               <ul className="dropdown-menu" aria-labelledby="navbarDropdown">
                 <li>
                   <a className="dropdown-item" href="#">
-                    EJM
+                    Gestión en Proyectos
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    EJM
+                    Gestion Ecosostenible
                   </a>
                 </li>
                 <li>
                   <a className="dropdown-item" href="#">
-                    EJM
+                    Gestion Ambiental
+                  </a>
+                </li>
+
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Gestion en Recursos Humanos RRHH
+                  </a>
+                </li>
+
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Gestion Laboral Persona Natural
+                  </a>
+                </li>
+
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Gestion Educativa Empresarial
+                  </a>
+                </li>
+
+                <li>
+                  <a className="dropdown-item" href="#">
+                    Gestion en SGSST
                   </a>
                 </li>
               </ul>
